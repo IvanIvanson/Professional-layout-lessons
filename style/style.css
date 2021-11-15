@@ -198,6 +198,7 @@
     padding: 15px 39px;
     color: #f26376;
     background: transparent;
+    border: solid #f26376 1px;
     margin-top: 48px;
     margin-bottom: 93px;
 }
