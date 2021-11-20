@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/catalogStyle.css">
-    <title>Document</title>
+    <title>Catalog</title>
+    <script src="https://kit.fontawesome.com/37034a43cb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header class="header">
             <div class="headerContent">
                             <div class="header__left">
                                <a href="index.html"><img src="image/logo.svg" alt="logo" class="logo"></a>
@@ -22,48 +23,98 @@
                                 <img src="image/basket.svg" alt="basket" class="header__item">
                             </div>
             </div>
-                        </div>
-        <div class="content">
+        </header>
+
+        <main class="content">
 <!-- Breadcrumb -->
-<div class="breadcrumb">
+<nav class="breadcrumb">
     <div class="breadcrumbContent">
                     <div class="breadcrumb__left">
                        <h4>NEW ARRIVALS </h4>
                     </div>
                    
                     <div class="breadcrumb__right">
-                        <span class="breadcrumb__item">HOME</span>
+                        <a href="index.html" class="breadcrumb__item">HOME</a>
                         <span>/</span>
-                        <span class="breadcrumb__item">MEN</span>
+                        <a href="" class="breadcrumb__item">MEN</a>
                         <span>/</span>
-                        <span class="breadcrumb__item">NEW ARRIVALS</span>
+                        <a href="" class="breadcrumb__item">NEW ARRIVALS</a>
                     </div>
     </div>
-                </div>
+</nav>
 <!-- end Breadcrumb -->
-<div class="conteinerHeader"><div class="cards-conteinerHeader">
+
+
+<div class="conteinerHeader">
+    <div class="cards-conteinerHeader">
     <button class="filter-btn">FILTER<img src="image/filter-icon.svg" alt="filter"></button>
 
-<div class="option">
-    <p class="option__item">TRENDING NOW<select>
-<option value="1"> </option>
-<option value="2"> </option>
-</select> </p>
+<!-- ================================= -->
 
 
-<p class="option__item">SIZE<select>
-    <option value="1"> </option>
-    <option value="2"> </option>
-    </select></p>
+<!-- ================ select ======================= -->
+<div class="cards-conteinerHeader__form">
+    <form action="">
+        <div class="multiselect">
+            <div class="selectBox">
+              <span>TRENDING NOW <img class="arrow" src="image/errow.png" alt="arrow"></span>
+                <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes" class="checkboxes check1">
+                <label for="xs">
+                    <input type="checkbox" id="xs"><h6>XS</h6></label>
+                    <label for="s">
+                        <input type="checkbox" id="s"><h6>S</h6></label>
+                        <label for="L">
+                            <input type="checkbox" id="L"><h6>L</h6></label>
+                            <label for="m">
+                                <input type="checkbox" id="M"><h6>M</h6></label>
+            </div>
+        </div>
+    </form>
 
-    <p class="option__item">PRICE<select>
-        <option value="1"> </option>
-        <option value="2"> </option>
-        </select></p>
+<form action="">
+    <div class="multiselect">
+        <div class="selectBox">
+          <span>SIZE<img class="arrow" src="image/errow.png" alt="arrow"></span>
+            <div class="overSelect"></div>
+        </div>
+        <div id="checkboxes" class="checkboxes check2">
+            <label for="xs">
+                <input type="checkbox" id="xs"><h6>XS</h6></label>
+                <label for="s">
+                    <input type="checkbox" id="s"><h6>S</h6></label>
+                    <label for="L">
+                        <input type="checkbox" id="L"><h6>M</h6></label>
+                        <label for="m">
+                            <input type="checkbox" id="M"><h6>L</h6></label>
+        </div>
     </div>
-</div>
-</div>
+</form>
 
+<form action="">
+    <div class="multiselect">
+        <div class="selectBox">
+          <span>PRISE<img class="arrow" src="image/errow.png" alt="arrow"></span>
+            <div class="overSelect"></div>
+        </div>
+        <div id="checkboxes" class="checkboxes check3">
+            <label for="xs">
+                <input type="checkbox" id="xs"><h6>XS</h6></label>
+                <label for="s">
+                    <input type="checkbox" id="s"><h6>S</h6></label>
+                    <label for="L">
+                        <input type="checkbox" id="L"><h6>M</h6></label>
+                        <label for="m">
+                            <input type="checkbox" id="M"><h6>L</h6></label>
+        </div>
+    </div>
+</form>
+</div>
+<!-- ======================================= -->
+
+</div>
+</div>
 
 <div class="cards-conteiner">
   
@@ -145,9 +196,9 @@
 </div>
 
 
-        </div>
+</main>
 
-        <div class="footer">
+        <footer class="footer">
 <div class="footerTop">
     <div class="category__flex">
 
@@ -202,13 +253,32 @@
     </div>
    
     <div class="footerBottom__right">
-        <img src="image/facebook.svg" alt="facebook" class="header__item-social">
-        <img src="image/instagram.svg" alt="instagram" class="header__item-social">
-        <img src="image/Vector-P.svg" alt="P" class="header__item-social">
-        <img src="image/twitter.svg" alt="twitter" class="header__item-social">
-    </div>
-</div>
+        <div class="header__item-social">
+            <a href=""> <i class="fab fa-facebook-f"></i></a>
+           
         </div>
+        <div class="header__item-social">
+            <a href=""> <i class="fab fa-brands fa-instagram"></i></a>
+           
+        </div>
+        <div class="header__item-social">
+            <a href=""> <i class="fab fa-pinterest-p"></i></a>
+           
+        </div>
+        <div class="header__item-social">
+            <a href=""> <i class="fab fa-twitter"></i></a>
+           
+        </div>
+        
+                <!-- <img src="image/facebook.svg" alt="facebook" class="header__item-social">
+                <img src="image/instagram.svg" alt="instagram" class="header__item-social">
+                <img src="image/Vector-P.svg" alt="P" class="header__item-social">
+                <img src="image/twitter.svg" alt="twitter" class="header__item-social"> -->
+            </div>
+</div>
+</footer>
     </div>
+
+    <script src="catalog.js"></script>
 </body>
 </html>

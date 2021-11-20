@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>Main</title>
+    <script src="https://kit.fontawesome.com/37034a43cb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header class="header">
             <div class="headerContent">
                             <div class="header__left">
                                <a href="index.html"><img src="image/logo.svg" alt="logo" class="logo"></a>
@@ -22,8 +23,12 @@
                                 <img src="image/basket.svg" alt="basket" class="header__item">
                             </div>
             </div>
-                        </div>
-        <div class="content">
+        </header>
+
+
+
+                        
+        <main class="content">
 
            <div class="brand">
                <div class="brand__flex">
@@ -115,9 +120,11 @@
 
 </div>
 
-        </div>
+</main>
 
-        <div class="footer">
+
+
+        <footer class="footer">
 <div class="footerTop">
     <div class="category__flex">
 
@@ -154,10 +161,10 @@
                
                 <h4>SUBSCRIBE</h4>
                 <p>FOR OUR NEWLETTER AND PROMOTION</p>
-                <div class="subscribe">
-                  <input type="email" name="mail" id="mail" placeholder="Enter Your Email">  
-                  <button class="btn-subscribe">Subscribe</button>
-                </div>
+                <form class="subscribe">
+                  <input class="email" type="email" name="mail" id="mail" placeholder="Enter Your Email">  
+                  <input type="submit" class="btn-subscribe" value="Subscribe">
+                </form>
                 
             </div>
            </div>
@@ -172,13 +179,30 @@
     </div>
    
     <div class="footerBottom__right">
-        <img src="image/facebook.svg" alt="facebook" class="header__item-social">
+<div class="header__item-social">
+    <a href=""> <i class="fab fa-facebook-f"></i></a>
+   
+</div>
+<div class="header__item-social">
+    <a href=""> <i class="fab fa-brands fa-instagram"></i></a>
+   
+</div>
+<div class="header__item-social">
+    <a href=""> <i class="fab fa-pinterest-p"></i></a>
+   
+</div>
+<div class="header__item-social">
+    <a href=""> <i class="fab fa-twitter"></i></a>
+   
+</div>
+
+        <!-- <img src="image/facebook.svg" alt="facebook" class="header__item-social">
         <img src="image/instagram.svg" alt="instagram" class="header__item-social">
         <img src="image/Vector-P.svg" alt="P" class="header__item-social">
-        <img src="image/twitter.svg" alt="twitter" class="header__item-social">
+        <img src="image/twitter.svg" alt="twitter" class="header__item-social"> -->
     </div>
 </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
