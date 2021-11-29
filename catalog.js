@@ -38,10 +38,27 @@ let select3 = function (){
 let arr = [select1, select2, select3];
 
 
-for(let i = 0; i <= arr.length; i++){
-    select[i].addEventListener('click', arr[i]);
-}
+// for(let i = 0; i <= arr.length; i++){
+//     select[i].addEventListener('click', arr[i]);
+// }
 
     select[0].addEventListener('click', arr[0]);
     select[1].addEventListener('click',arr[1]);
     select[2].addEventListener('click', arr[2]);
+
+    // filter
+    let summary = document.querySelector('#mainSummary');
+    let iconFilter = document.querySelector('.filter-icon');
+    let iconFilterOpen = document.querySelector('.filterIconOpen');
+    let flag = true;
+    summary.addEventListener('click', function(){
+        if(flag==true){
+        iconFilter.style.display = "none";
+        iconFilterOpen.style.display = "inline-block";
+        flag = false;
+        }else  if(flag==false){
+            iconFilter.style.display = "inline-block";
+            iconFilterOpen.style.display = "none";
+            flag = true;
+            }
+    })

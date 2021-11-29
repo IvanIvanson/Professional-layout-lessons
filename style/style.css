@@ -28,8 +28,94 @@
     margin-left: 41px;
 }
 .header__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 25px;
 }
+.header__item:last-child {
+    margin-left: 17px;
+}
+.header__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* menu */
+.menu{
+    display: inline-block;
+    position: relative;
+}
+.menu-list{
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 232px;
+    transition: all 1s ease;
+    opacity: 0;
+    z-index: -1;
+    margin-top: -150px;
+    list-style: none;
+    background: white;
+    padding-top: 37px;
+    padding-left: 34px;
+    margin-left: 179px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.menu-list>.close{
+    float: right;
+    margin-right: 17px;
+    margin-top: -16px;
+    margin-bottom: -9px;
+
+}
+summary{
+    display: block;
+    cursor: pointer;
+}
+summary::webkit-details-marker{
+    display: none;
+}
+.menu-list>.menu-list_item{
+    padding-top: 24px;
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #F16D7F;
+
+}
+.menu-list>.item-menu{
+    color:black
+}
+.menu-list_item>ul>li{
+    list-style: none;
+   
+    padding-top: 11px;   
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    }
+.menu-list_item>ul>li>a{
+    text-decoration: none;
+ cursor: pointer;
+}
+
+.menu._active .menu-list{
+    display: block;
+    height: 764px;
+    opacity: 1;
+    z-index: 1;
+    margin-top: 28px;
+}
+.header__item-menu{
+border: none;
+background: transparent;
+cursor: pointer;
+
+}
+/* end menu */
 .content {
     flex-grow: 1;
     width: 100%;
@@ -48,9 +134,9 @@
     background: url("../image/brand_img.png") no-repeat -228px;
 }
 .brand__text {
-    max-width: 405px;
+    max-width: 495px;
     padding-left: 20px;
-    padding-top: 16px;
+    padding-top: 0px;
     padding-right: 90px;
     border-left: solid #f16d7f 12px;
     font-family: Lato;
@@ -71,6 +157,8 @@
 .brand__text span {
     color: #f16d7f;
 }
+
+
 .category {
     margin-top: 65px;
 }
