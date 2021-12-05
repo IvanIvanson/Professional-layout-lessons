@@ -25,9 +25,6 @@
 }
 @media  (max-width: 768px) {
 .content {
-    // flex-grow: 1;
-    // width: 100%;
-
     .brand {
     height: 390px;
     background: #f1e4e6;
@@ -79,7 +76,6 @@ color: #222222;
 
         .category__item:not(:last-child) {
             max-width: 233px;
-            // height: 260px;
         }
        
     }
