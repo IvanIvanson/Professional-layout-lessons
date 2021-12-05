@@ -18,11 +18,14 @@
                             </div>
                            
                             <div class="header__right">
-                                <!-- menu -->
+
+                               
 <div class="header__item">
+ <!-- menu -->
 
     <div class="menu">
          <button class="header__item-menu" id="btn-menu"> <img src="image/burger.svg" alt="burger" class=""></button>
+
     <ul  class="menu-list">
         <li class="close"><img src="image/close-menu.svg" alt="close"></li>
         <li class="menu-list_item item-menu">MENU</li>
@@ -62,10 +65,10 @@
         
     </ul>
     </div>
-   
+<!-- end menu -->
 </div>
                                
-<!-- end menu -->
+
 <div class="header__item">
      <img src="image/account.svg" alt="account" class="">
 </div>
@@ -100,21 +103,36 @@
                 30% OFF
                 <h2>FOR WOMEN</h2>
             </div>
-         <img src="image/for_women.png" alt="women"></div>
+         <!-- <img src="image/for_women.png" alt="women" > -->
+         <picture>
+             <source media="(min-width:768px) and (max-width:1024px)"
+             srcset="image/for-women-768.jpg">
+             <img src="image/for_women.png" alt="women" >
+         </picture>
+        </div>
 
         <div class="category__item">
             <div class="category__itemBg">
                 HOT DEAL
                 <h2>FOR MEN</h2>
             </div>
+            <picture>
+                <source media="(min-width:768px) and (max-width:1024px)"
+                srcset="image/for-men-768.png">
             <img src="image/for_men.png" alt="man">
+        </picture>
         </div>
         <div class="category__item">
             <div class="category__itemBg">
                 NEW ARRIVALS
                 <h2>FOR KIDS</h2>
             </div>
+            <picture>
+                <source media="(min-width:768px) and (max-width:1024px)"
+                srcset="image/for-kids-768.png">
             <img src="image/for_kids.png" alt="kids">
+        </picture>
+            
         </div>
         <div class="category__item">
             <div class="category__itemBg">
