@@ -90,6 +90,27 @@ margin-bottom: 64px;
 }
 }
 
+@media  (max-width: 620px) {
+    .content {
+        .brand {
+        height: 390px;
+        background: #f1e4e6;
+        overflow: hidden;
+    
+        &__flex {
+            display: flex;
+            justify-content: flex-end;
+            max-width: $max-width;
+            margin: 0 auto;
+            height: 100%;
+            align-items: center;
+            background: url("../image/manBg-768.png") no-repeat -100px;
+        }
+    }
+}
+}    
+
+
 @media  (max-width: 425px) {
     .content {
         flex-grow: 1;

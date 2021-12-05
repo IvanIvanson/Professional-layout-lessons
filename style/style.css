@@ -23,6 +23,8 @@
   margin: 0 auto;
   padding-top: 28px;
   padding-bottom: 20px;
+  padding-left: 36px;
+  padding-right: 36px;
 }
 .wrapper .header .headerContent .header__left .search {
   margin-left: 41px;
@@ -680,6 +682,22 @@
     margin-bottom: 64px;
   }
 }
+@media (max-width: 620px) {
+  .wrapper .content .brand {
+    height: 390px;
+    background: #f1e4e6;
+    overflow: hidden;
+  }
+  .wrapper .content .brand__flex {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    background: url("../image/manBg-768.png") no-repeat -100px;
+  }
+}
 @media (max-width: 425px) {
   .wrapper .content {
     flex-grow: 1;
@@ -969,7 +987,6 @@
     opacity: 0.5;
   }
   .wrapper .footer .footerCenter {
-    border: solid red 2px;
     margin-top: 104px;
     padding-top: 64px;
     padding-bottom: 126px;
