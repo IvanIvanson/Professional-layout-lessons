@@ -1,29 +1,14 @@
-@import 'module/var';
-
-@mixin reset() {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
-
+@import 'var';
 @mixin flex() {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: $max-width;
-        gap: $gap;
-        margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $max-width;
+    gap: $gap;
+    margin: 0 auto;
 
 }
-     
-* {
-    @include reset;
-    }
+@media  (max-width: 1024px) {
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    @import 'module/header';
 
 .main {
     flex-grow: 1;
@@ -211,8 +196,4 @@ color: #000000;
     }
 
 }
-
-@import 'module/footer';
 }
-
-@import 'module/registration-media-queries';
