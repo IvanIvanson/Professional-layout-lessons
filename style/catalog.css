@@ -372,6 +372,9 @@
   background: #f8f8f8;
   color: #5d5d5d;
 }
+.wrapper .content .cards-conteiner .category__flex .category__card a {
+  text-decoration: none;
+}
 .wrapper .content .cards-conteiner .category__flex .category__card h4 {
   font-family: "Lato";
   font-style: normal;
