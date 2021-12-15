@@ -343,14 +343,14 @@
         width: 360px;
         background: #f8f8f8;
         color: #5d5d5d;
-        z-index: -1;
         h4 {
             font-family: "Lato";
             font-style: normal;
             font-weight: normal;
             font-size: 13px;
             line-height: 16px;
-            text-align: center;
+            text-align:left;
+            padding-left: 18px;
             padding-top: 25px;
             padding-bottom: 13px;
             color: #000000;
