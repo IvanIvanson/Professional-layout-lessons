@@ -112,6 +112,12 @@
   z-index: 10;
   margin-top: 30px;
 }
+.wrapper .header .headerContent .header__right .header__item .account_icon {
+  cursor: pointer;
+}
+.wrapper .header .headerContent .header__right .header__item .bascket-icon {
+  cursor: pointer;
+}
 .wrapper .content {
   flex-grow: 1;
   width: 100%;
@@ -342,6 +348,7 @@
   margin-top: 48px;
   margin-bottom: 64px;
   border: 1px solid #ff6a6a;
+  cursor: pointer;
 }
 .wrapper .content .addCard span {
   margin-left: 23px;
@@ -392,6 +399,7 @@
   padding-top: 25px;
   padding-bottom: 13px;
   color: #000000;
+  cursor: pointer;
 }
 .wrapper .content .cards-conteiner .category__flex .category__card p {
   font-family: "Lato";
@@ -551,6 +559,9 @@
   line-height: 17px;
   text-align: center;
   color: #ffffff;
+}
+.wrapper .footer .footerCenter .category__flex-center .category__item-right .subscribe .btn-subscribe:hover {
+  opacity: 0.7;
 }
 .wrapper .footer .footerBottom {
   max-width: 1140px;

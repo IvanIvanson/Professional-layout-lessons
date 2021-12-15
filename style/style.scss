@@ -143,6 +143,7 @@
         line-height: 36px;
         text-align: center;
         color: #222222;
+       
     }
      p {
         text-align: center;
@@ -165,10 +166,12 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
-    text-align: center;
+    text-align: left;
+    padding-left: 18px;
     padding-top: 25px;
     padding-bottom: 13px;
     color: #000000;
+    cursor: pointer;
 }
  p {
     font-family: "Lato";
@@ -234,6 +237,8 @@
             
     }
 }
+
+
 .category__card_container:hover .category__card_itemBg{
     position: absolute;
    
@@ -252,6 +257,7 @@
     color: #ffffff;
     z-index: 200;
 }
+
 //  battonAdd 
 
 .category__card_container:hover .addCard {
@@ -275,10 +281,12 @@
         margin-top: 48px;
         margin-bottom: 93px;
         border: solid #f26376;
+        cursor: pointer;
     }
     .browser:hover {
         color: #ffffff;
         background: #f16d7f;
+       
     }
 
 }

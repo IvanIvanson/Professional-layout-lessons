@@ -301,7 +301,7 @@
     margin-top: 48px;
     margin-bottom: 64px;
     border: 1px solid #ff6a6a;
-
+    cursor:pointer;
      span {
         margin-left: 23px;
     }
@@ -354,6 +354,7 @@
             padding-top: 25px;
             padding-bottom: 13px;
             color: #000000;
+           cursor: pointer;
         }
         p {
             font-family: "Lato";

@@ -323,6 +323,7 @@ img.arrow {
     padding-top: 25px;
     padding-bottom: 13px;
     color: #000000;
+    cursor: pointer;
 }
 .category__card p {
     font-family: "Lato";
